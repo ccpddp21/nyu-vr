@@ -12,3 +12,16 @@
 - Touch the Golden Door with the Golden Crystal to open it
 
 #### NOTE: the location of the Golden Crystal and the Golden Room changes randomly with each playthrough
+
+## Assets Used
+- SNAPS: Office Pack (free)
+
+## Mechanics
+- Teleportation (XR Interation Toolkit)
+- Object Grabbing (XR Interation Toolkit)
+- Snap Turn (XR Interation Toolkit)
+- Menu Toggle (Input System)
+
+## Custom Scripts
+- KeySpawner: randomly selects three locations in the maze to spawn the key (Golden Crystal)
+- RoomSpawner: randomly selects three locations in the maze to sapw the Win Room with the Golden Door
