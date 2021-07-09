@@ -17,11 +17,11 @@
 - SNAPS: Office Pack (free)
 
 ## Mechanics
-- Teleportation (XR Interation Toolkit)
-- Object Grabbing (XR Interation Toolkit)
-- Snap Turn (XR Interation Toolkit)
+- Teleportation (XR Interaction Toolkit)
+- Object Grabbing (XR Interaction Toolkit)
+- Snap Turn (XR Interaction Toolkit)
 - Menu Toggle (Input System)
 
 ## Custom Scripts
 - KeySpawner: randomly selects three locations in the maze to spawn the key (Golden Crystal)
-- RoomSpawner: randomly selects three locations in the maze to sapw the Win Room with the Golden Door
+- RoomSpawner: randomly selects three locations in the maze to spawn the Win Room with the Golden Door
