@@ -5,14 +5,14 @@ using UnityEngine.Events;
 
 public class WinDoor : MonoBehaviour
 {
-    public UnityEvent playerWon = new UnityEvent();
+    public GameObject canvas;
 
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Win Key"))
         {
             gameObject.SetActive(false);
-            playerWon.Invoke();
+            canvas.SetActive(true);
         }
     }
 }
