@@ -7,7 +7,8 @@
 - Press the Start button to toggle the Menu
 
 ## Objective
+- Find and open the Golden Door to Win!
 - Navigate the Maze to find the Golden Crystal
-- The Golden Crystal opens the Golden Door
-- Find and open the Golden Door to Win
-- NOTE: the location of the Golden Crystal and the Golden Room changes randomly with each playthrough
+- Touch the Golden Door with the Golden Crystal to open it
+
+#### NOTE: the location of the Golden Crystal and the Golden Room changes randomly with each playthrough
