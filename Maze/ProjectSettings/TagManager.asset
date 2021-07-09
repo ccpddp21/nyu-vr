@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Room Spawn
   - Key Spawn
+  - Win Key
   layers:
   - Default
   - TransparentFX

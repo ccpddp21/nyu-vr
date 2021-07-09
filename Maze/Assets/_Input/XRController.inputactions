@@ -19,7 +19,7 @@
                     "name": "",
                     "id": "6783b259-f091-47c2-acbf-48fcd1e6a4fd",
                     "path": "<OculusTouchController>/start",
-                    "interactions": "Press",
+                    "interactions": "",
                     "processors": "",
                     "groups": "Oculus Controller",
                     "action": "OpenMenu",
