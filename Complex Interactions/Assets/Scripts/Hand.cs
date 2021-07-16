@@ -18,6 +18,11 @@ public class Hand : MonoBehaviour
     public bool isHidden { get; private set; } = false;
     public InputAction trackedAction = null;
 
+    public InputAction gripAction = null;
+
+    public Animator handAnimator = null;
+    private int _gripAmountParameter = 0;
+
     private bool _isCurrentlyTracked = false;
     private List<Renderer> _currentRenderers = new List<Renderer>();
 
@@ -37,7 +42,15 @@ public class Hand : MonoBehaviour
     {
         _colliders = GetComponentsInChildren<Collider>().Where(childCollider => !childCollider.isTrigger).ToArray();
         trackedAction.Enable();
+        _gripAmountParameter = Animator.StringToHash("GripAmount");
+        gripAction.Enable();
         Hide();
+    }
+
+    void UpdateAnimations()
+    {
+        float gripAmount = gripAction.ReadValue<float>();
+        handAnimator.SetFloat(_gripAmountParameter, gripAmount);
     }
 
     void OnEnable()
@@ -66,6 +79,8 @@ public class Hand : MonoBehaviour
             _isCurrentlyTracked = false;
             Hide();
         }
+
+        UpdateAnimations();
     }
 
     public void Show()
