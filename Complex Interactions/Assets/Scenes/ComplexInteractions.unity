@@ -727,6 +727,22 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Grip
       m_Flags: 0
+  triggerAction:
+    m_Name: Trigger
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 6a15001b-5534-457d-a2b8-74c1bb1896f4
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: b03b5731-553d-4f3f-a640-54153deeea6b
+      m_Path: <XRController>{LeftHand}/trigger
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Trigger
+      m_Flags: 0
   handAnimator: {fileID: 3263264612096475213}
   interactor: {fileID: 2001375157}
 --- !u!1001 &594580032
@@ -4799,6 +4815,22 @@ MonoBehaviour:
       m_Processors: 
       m_Groups: 
       m_Action: Grip
+      m_Flags: 0
+  triggerAction:
+    m_Name: Trigger
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 2a6d542e-745e-4b7f-be41-7750b01bcb5b
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: ba65a657-0e06-4db1-b8b1-ac1888b57e66
+      m_Path: <XRController>{RightHand}/trigger
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Trigger
       m_Flags: 0
   handAnimator: {fileID: 394317620978974937}
   interactor: {fileID: 957271159}
