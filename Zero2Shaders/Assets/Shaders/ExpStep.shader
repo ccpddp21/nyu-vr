@@ -2,6 +2,7 @@
 {
     Properties
     {
+        _EdgeThreshold("Step Thresh", Range(0, 1)) = 0.5
     }
 
     SubShader
@@ -29,8 +30,11 @@
                 float4 vertex : SV_POSITION;
             };
 
+            float _EdgeThreshold;
+
             v2f vert (appdata v)
             {
+                v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv = v.uv;
                 return o;
@@ -38,6 +42,7 @@
 
             fixed4 frag(v2f i) : SV_Target
             {
+                return step(_EdgeThreshold, i.uv.x);
             }
             ENDCG
         }
