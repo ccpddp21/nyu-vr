@@ -21,18 +21,27 @@
             struct v2f
             {
                 float4 vertex : SV_POSITION;
+                float3 objectPosition : TEXCOORD0;
             };
 
             v2f vert (appdata v)
             {
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
+                o.objectPosition = v.vertex.xyz; // pass the position to the frag shader
                 return o;
             }
 
             fixed4 frag(v2f i) : SV_Target
             {
+                // Swizzling
+                // float3 t = i.objectPosition.xxx;
+                // float3 t = i.objectPosition.yyy;
+                // float3 t = i.objectPosition.zzz;
+                // float3 t = i.objectPosition.zyx;
+
                 //use object position as a color
+                return float4(i.objectPosition, 1.0);
             }
             ENDCG
         }

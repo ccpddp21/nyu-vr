@@ -21,6 +21,7 @@
             struct v2f
             {
                 float4 vertex : SV_POSITION;
+                float3 worldPosition : TEXCOORD0;
                 //Use TEXCOORD0 interpolator to pass object space position to fragment shader
             };
 
@@ -32,12 +33,16 @@
                 //https://docs.unity3d.com/Manual/SL-UnityShaderVariables.html
                 //transform object space to world space
 
+                float4 ws = mul(unity_ObjectToWorld, v.vertex);
+                o.worldPosition = ws.xyz;
+
                 return o;
             }
 
             fixed4 frag(v2f i) : SV_Target
             {
                 //use position as a color
+                return float4(i.worldPosition, 1.0);
             }
             ENDCG
         }
