@@ -18,5 +18,6 @@ public class SimpleRotate : MonoBehaviour
     void Update()
     {
         _angle += speed * Time.deltaTime;
+        transform.Rotate(Vector3.one, _angle);
     }
 }
