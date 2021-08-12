@@ -1,0 +1,50 @@
+{
+    "name": "XRController",
+    "maps": [
+        {
+            "name": "Oculus Touch",
+            "id": "2660024b-bdae-453e-bbe5-c13169dd03f2",
+            "actions": [
+                {
+                    "name": "OpenMenu",
+                    "type": "Button",
+                    "id": "a1508c2a-5800-4a96-9d6b-cb90e787e2c3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "6783b259-f091-47c2-acbf-48fcd1e6a4fd",
+                    "path": "<OculusTouchController>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Oculus Controller",
+                    "action": "OpenMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Oculus Controller",
+            "bindingGroup": "Oculus Controller",
+            "devices": [
+                {
+                    "devicePath": "<OculusTouchController>{LeftHand}",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<OculusTouchController>{RightHand}",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
