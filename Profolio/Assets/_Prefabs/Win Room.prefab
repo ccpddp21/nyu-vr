@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 104097856798434533}
   - component: {fileID: 129150794438538201}
   - component: {fileID: 672322554923480116}
+  - component: {fileID: 8328257623901581390}
   m_Layer: 0
   m_Name: Win Door
   m_TagString: Untagged
@@ -107,7 +108,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c7f8b6dfd40a3140a22732d268ac288, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onWin:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8328257623901581390}
+        m_MethodName: Go
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   canvas: {fileID: 8634041792067522916}
+--- !u!114 &8328257623901581390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82217150275589215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f848d687e03df5c45bd1cdf6c4e443e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextScene: 0
 --- !u!1 &1192177016405263855
 GameObject:
   m_ObjectHideFlags: 0
@@ -5476,7 +5504,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RaycastTriggerInteraction: 1
 --- !u!1001 &3919450710071165810
 PrefabInstance:
   m_ObjectHideFlags: 0

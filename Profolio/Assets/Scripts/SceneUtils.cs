@@ -5,6 +5,15 @@ using UnityEngine.SceneManagement;
 
 public static class SceneUtils
 {
+    public enum SceneId
+    {
+        Lobby,
+        Maze,
+        ComplexInterations
+    }
+
+    public static readonly string[] scenes = { Names.Lobby, Names.Maze, Names.ComplexInteractions };
+
     public static class Names
     {
         public static readonly string XRPersistent = "XRPersistent";

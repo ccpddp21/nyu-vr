@@ -12,6 +12,7 @@ public class SceneLoader : Singleton<SceneLoader>
     [Range(0.0f, 5.0f)]
     public float addedWaitTime = 2.0f;
     public UnityEvent onLoadStart = new UnityEvent();
+    public UnityEvent onBeforeUnload = new UnityEvent();
     public UnityEvent onLoadFinished = new UnityEvent();
 
     private bool isLoading = false;
@@ -57,6 +58,10 @@ public class SceneLoader : Singleton<SceneLoader>
         isLoading = true;
         onLoadStart?.Invoke();
         yield return FadeOut();
+
+        onBeforeUnload?.Invoke();
+        yield return new WaitForSeconds(0);
+
         yield return StartCoroutine(UnloadCurrentScene());
 
         yield return new WaitForSeconds(addedWaitTime);
