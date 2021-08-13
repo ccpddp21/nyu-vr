@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public static class SceneUtils
 {
-    public static class Name
+    public static class Names
     {
         public static readonly string XRPersistent = "XRPersistent";
         public static readonly string Maze = "Maze";

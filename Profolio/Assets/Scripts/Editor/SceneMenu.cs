@@ -10,24 +10,24 @@ public static class SceneMenu
     [MenuItem("Scenes/Lobby")]
     static void OpenLobby()
     {
-        OpenScene(SceneUtils.Name.Lobby);
+        OpenScene(SceneUtils.Names.Lobby);
     }
 
     [MenuItem("Scenes/Maze")]
     static void OpenMaze()
     {
-        OpenScene(SceneUtils.Name.Maze);
+        OpenScene(SceneUtils.Names.Maze);
     }
 
     [MenuItem("Scenes/ComplexInteractions")]
     static void OpenComplexInteractions()
     {
-        OpenScene(SceneUtils.Name.ComplexInteractions);
+        OpenScene(SceneUtils.Names.ComplexInteractions);
     }
 
     static void OpenScene(string name)
     {
-        Scene persistentScene = EditorSceneManager.OpenScene("Assets/Scenes/" + SceneUtils.Name.XRPersistent + ".unity", OpenSceneMode.Single);
+        Scene persistentScene = EditorSceneManager.OpenScene("Assets/Scenes/" + SceneUtils.Names.XRPersistent + ".unity", OpenSceneMode.Single);
         Scene currentScene = EditorSceneManager.OpenScene("Assets/Scenes/" + name + ".unity", OpenSceneMode.Additive);
         SceneUtils.AlignXRRig(persistentScene, currentScene);
     }
