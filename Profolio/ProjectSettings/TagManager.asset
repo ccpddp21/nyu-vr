@@ -7,8 +7,8 @@ TagManager:
   - Win Key
   - Key Spawn
   - Room Spawn
-  - XR Rig Origin
-  - XR Rig
+  - XRRigOrigin
+  - XRRig
   layers:
   - Default
   - TransparentFX
